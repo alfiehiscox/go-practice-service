@@ -2,8 +2,11 @@ package main
 
 import (
     "fmt"
+    "net/http"
+    "os"
+    "log"
 )
 
 func main() {
-    fmt.Println("Hello, world")
+    l := log.New(os.Stdout, " go-practice-service", log.LstdFlags)
 }
