@@ -17,7 +17,7 @@ func NewHello(l *log.Logger) *Hello {
 
 // HTTP Handler
 func (h *Hello) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
-    h.l.Println("Hello Handler request incomming")
+    h.l.Println("Received Request to Hello Handler")
     fmt.Fprint(rw, "Hello, world!")
 }
 
